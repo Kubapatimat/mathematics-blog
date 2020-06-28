@@ -71,7 +71,7 @@ $$
 \end{aligned}
 $$
 
-Delta $$\Delta$$ to tzw. **wyróżnik** trójmianu kwadratowego, czyli wyrażenie algebraiczne zbudowane z jego współczynników.
+**Wyróżnik** trójmianu kwadratowego to tzw. delta $$\Delta$$, czyli wyrażenie algebraiczne zbudowane z jego współczynników.
 
 $$
 \text{Liczba różnych rozwiązań w liczbach rzeczywistych} =
