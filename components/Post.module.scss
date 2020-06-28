@@ -1,0 +1,47 @@
+.article {
+  padding: 2rem 0;
+  width: 90%;
+
+  .title {
+    padding-left: 2rem;
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .date {
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    margin: 0;
+    border-bottom: solid 2px gray;
+    padding-bottom: 0.5rem;
+  }
+
+  .content {
+    text-align: justify;
+    font-size: 1.1rem;
+    padding: 2rem 3rem 0;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 2rem 0 0.3rem;
+    }
+
+    p {
+      margin: 0 0 0.5rem;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+
+      &[src="/images/ksiezyce-hipokratesa-trojkat.png"] {
+        width: 40%;
+        height: auto;
+      }
+    }
+  }
+}
