@@ -10,3 +10,9 @@
   padding-bottom: 0.5rem;
   width: 30%;
 }
+
+@media (max-width: 890px) {
+  .intro {
+    max-width: 80%;
+  }
+}

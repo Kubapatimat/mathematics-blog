@@ -36,3 +36,9 @@
   padding: 1rem;
   text-align: center;
 }
+
+@media (max-width: 890px) {
+  .header a {
+    font-size: 2rem;
+  }
+}

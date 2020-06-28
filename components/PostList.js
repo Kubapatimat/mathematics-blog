@@ -12,7 +12,7 @@ export default function PostList({ posts }) {
               <div className={styles.thumbnail}>
                 <ParsedMarkdown content={frontmatter.thumbnail} />
               </div>
-              <h3 className={styles.title}>{frontmatter.title}</h3>
+              <h3 className={styles.postTitle}>{frontmatter.title}</h3>
               <span className={styles.date}>{frontmatter.date}</span>
             </header>
           </article>
