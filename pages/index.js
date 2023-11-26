@@ -14,13 +14,13 @@ export default function Index({ posts }) {
         znanych wzorów. Mam nadzieję, że znajdująca się tutaj treść będzie
         inspiracją do własnego poznawania matematyki.
       </p>
+      <h2>
+        <Link href={"/about"}>Proces powstawania strony internetowej</Link>
+      </h2>
       <section>
         <h2 className={styles.postlistHeader}>Artykuły</h2>
         <PostList posts={posts} />
       </section>
-      <h2>
-        <Link href={"/about"}>Proces powstawania strony internetowej</Link>
-      </h2>
     </Layout>
   );
 }
