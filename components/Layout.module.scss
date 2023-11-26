@@ -3,7 +3,7 @@
 .container {
   margin: 0rem auto;
   padding: 2rem 1rem 0rem;
-  max-width: 90vw;
+  max-width: 85vw;
   @include flex-column-center;
   min-height: 100vh;
 }

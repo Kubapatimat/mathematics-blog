@@ -2,6 +2,7 @@ import Layout from "../components/Layout";
 import PostList from "../components/PostList";
 import { getSortedPosts } from "../lib/posts";
 import styles from "../components/Index.module.scss";
+import Link from "next/link";
 
 export default function Index({ posts }) {
   return (
@@ -17,6 +18,9 @@ export default function Index({ posts }) {
         <h2 className={styles.postlistHeader}>Artykuły</h2>
         <PostList posts={posts} />
       </section>
+      <h2>
+        <Link href={"/about"}>Proces powstawania strony internetowej</Link>
+      </h2>
     </Layout>
   );
 }
