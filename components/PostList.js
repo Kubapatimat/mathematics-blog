@@ -6,7 +6,7 @@ export default function PostList({ posts }) {
   return (
     <div className={styles.postContainer}>
       {posts.map(({ id, frontmatter }) => (
-        <Link href={"/posts/[id]"} as={`/posts/${id}`} key={id}>
+        <Link href={"/posts/[id]"} as={`/posts/${id}`} key={id} legacyBehavior>
           <article className={styles.article}>
             <header>
               <div className={styles.thumbnail}>

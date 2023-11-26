@@ -10,7 +10,7 @@ export default function Layout({ title, description, children }) {
       <SEO {...SEOProps} />
       <header className={styles.header}>
         <Link href="/">
-          <a>Ciekawostki matematyczne</a>
+          Ciekawostki matematyczne
         </Link>
       </header>
       <main className={styles.main}>{children}</main>

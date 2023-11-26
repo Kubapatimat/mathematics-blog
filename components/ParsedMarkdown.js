@@ -1,17 +1,12 @@
-import ReactMarkdown from "react-markdown/with-html";
-import RemarkMathPlugin from "remark-math";
-import { BlockMath, InlineMath } from "react-katex";
+import Markdown from "react-markdown";
+import rehypeKatex from "rehype-katex";
+import remarkMath from "remark-math";
+import "katex/dist/katex.min.css"; // `rehype-katex` does not import the CSS for you
 
-export default function ParsedMarkdown({ content }) {
+export default function ParsedMarkdown(markdown) {
   return (
-    <ReactMarkdown
-      escapeHtml={false}
-      source={content}
-      plugins={[RemarkMathPlugin]}
-      renderers={{
-        math: ({ value }) => <BlockMath>{value}</BlockMath>,
-        inlineMath: ({ value }) => <InlineMath>{value}</InlineMath>,
-      }}
-    />
+    <Markdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>
+      {markdown.content}
+    </Markdown>
   );
 }
